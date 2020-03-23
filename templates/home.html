@@ -9,23 +9,20 @@
 <p>Find the closest clinic/hospital to a school. </p>
 <hr>
 
-
-
-<p>Pick School: </p>
-<select id = "School_name"></select>
+<p> School Name: <span id="schoolname"></span></p>
 <hr>
-
-<p>Pick Hospital: </p>
-<select id = "hosp_name"></select>
-<hr>
-
-<p>Pick Clinic: </p>
-<select id = "clinic_name"></select>
-<hr>
+<p>Closest Hospital/Clinic: <span id="hospitalname"></span></p>
 
 <hr>
-<button type="button" class="btn btn-primary" onclick="clear_markers()">Remove Markers</button>
-<hr>
+<h3>Requirements: </h3>
+<br>
+<p>
+
+  1. Map: When a user visit the site, they should be able to see two layers, i.e., a layer of Calgary schools and a layer of Calgary clinics and hospitals.
+  <br>
+  2. Analysis: When a user clicks on a school, the map will show which clinic or hospital is nearest.
+  <br>
+  3. Mapping Library: You can use any mapping library of your choice. You can stay with Leaflet or you can simply follow Mapbox tutorial and use Mapbox GL.</p>
 
 {% endblock %}
 
