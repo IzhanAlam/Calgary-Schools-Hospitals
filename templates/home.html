@@ -1,0 +1,63 @@
+{% extends "template.html" %}
+
+
+{% block picword %}Basic Webmap with Calgary Open Data{% endblock %}
+
+{% block sidecontent %}
+<h3>Purpose: </h3>
+<br>
+<p>Find the closest clinic/hospital to a school. </p>
+<hr>
+
+
+
+<p>Pick School: </p>
+<select id = "School_name"></select>
+<hr>
+
+<p>Pick Hospital: </p>
+<select id = "hosp_name"></select>
+<hr>
+
+<p>Pick Clinic: </p>
+<select id = "clinic_name"></select>
+<hr>
+
+<hr>
+<button type="button" class="btn btn-primary" onclick="clear_markers()">Remove Markers</button>
+<hr>
+
+{% endblock %}
+
+
+
+{% block rightHeader %}
+
+<h3>Map</h3>
+
+{% endblock %}
+
+
+
+
+{% block imagecontent %}
+
+<style>
+    #map { height: 600px; }
+    
+</style>
+
+
+
+
+
+
+
+<div id = "map">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/map.js') }}"></script>
+</div>
+
+
+
+
+{% endblock %}
